@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+<table>
+    <thead>
+    <th>hash_value</th>
+    <th>Fortinet detection name</th>
+    <th>Number of engines detected</th>
+    <th>Scan Date</th>
+    </thead>
+    <tbody>
+
+    {% for x in data: %}
+
+    <tr>
+        <td>{{x}}</td>
+        <td>{{detection_names[loop.index]}}</td>
+        <td>{{engines[loop.index]}}</td>
+        <td>{{scan_date[loop.index]}}</td>
+    </tr>
+
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

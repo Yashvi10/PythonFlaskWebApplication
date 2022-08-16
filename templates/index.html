@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Fortinet Test WebApp</title>
+  </head>
+  <body>
+  <form method="POST" action="http://127.0.0.1:5000/result" enctype="multipart/form-data">
+    <label> Choose the File to upload: </label>
+    <input type="file" name="file" id="myFile" /> <br />
+
+    <input type="submit" value="Upload"/>
+  </form>
+
+  <table border="1">
+    <theadr>
+      <th>Hash Value</th>
+      <th>Fortinet Detection Name</th>
+      <th>Detected</th>
+      <th>Scan Date</th>
+    </theadr>
+
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+  </body>
+</html>
